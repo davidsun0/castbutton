@@ -4,7 +4,7 @@ import xinwenquery
 
 #set up server information
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_address = ('', 5940) #make sure server is accessible by local network
+server_address = ('', SERVER PORT) #make sure server is accessible by local network
 print >>sys.stderr, 'starting up on port %s port %s' % server_address
 sock.bind(server_address)
 
