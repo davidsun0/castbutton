@@ -13,7 +13,6 @@ def get_xwlb_vid(date):
     query = date + ' ' + xwlb
     result = search.search_by_keyword(query, 1)
     if(result != None
-        and result['items'][0]['snippet']['title'] == query
         and result['items'][0]['snippet']['channelTitle'] == 'TV 1080'):
         return 'https://youtu.be/' + result['items'][0]['id']['videoId']
 
